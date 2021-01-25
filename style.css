@@ -12,7 +12,6 @@ body {
 #wrapper {
     margin: 0px auto;
     width: 700px;
-    background-color: #ef2;
 }
 
 /* The canvas for our postcard, must be position:relative/overflow:hidden */
