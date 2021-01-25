@@ -22,7 +22,7 @@ function sunRaft() {
 function cloud1() {
     $("#cloud1").animate({
         left: '+=850px'
-    }, 1000).animate({
+    }, 10000).animate({
         left: "-150px"
     }, 0);
     setTimeout(cloud1, 10000);
@@ -52,6 +52,13 @@ function cloud3() {
  * going side by side – The raft bobs up and down, while the ripple underneath fades in and out.
  */
 
+ function greetings(){
+     $("#greetings").animate({top:"160px"},7000);
+ }
+ function stamp(){
+     $("#stamp").animate({top:"130px", left:"500px"},7000);
+ }
+
  /**
   * Putting It All Together (in a Function)
   * Now that we’ve defined the animations that will be looping let’s combine them all into a function that 
@@ -62,6 +69,8 @@ function cloud3() {
     cloud1();
     cloud2();
     cloud3();
+    greetings();
+    stamp();
   }
 
   setTimeout(animation,300);
